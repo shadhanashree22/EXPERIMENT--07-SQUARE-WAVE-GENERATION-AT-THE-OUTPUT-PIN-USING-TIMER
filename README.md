@@ -93,43 +93,42 @@ Step14. click on debug and simulate using simulation as shown below
 
  
 
-  
+  ## STM 32 CUBE PROGRAM :
 
-## STM 32 CUBE PROGRAM :
-
-
-
-
-
+```
+ HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_PWM_Init(&htim2);
+  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
 ## Output screen shots of proteus  :
+
+![image](https://github.com/user-attachments/assets/86879d01-13aa-4717-9bc5-e98913dcf030)
+
+
+![image](https://github.com/user-attachments/assets/fc0b2c48-3258-4994-98f9-ecf44659d9dc)
+
+
+![image](https://github.com/user-attachments/assets/7260dffb-254d-4829-bf2a-05e865397e9b)
+
  
- 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+
+ ![image](https://github.com/user-attachments/assets/69c7ffad-18d4-4f5a-a971-5a56956d2dfd)
+
  
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 500
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 3.2 TOFF=3.2 TOTAL TIME = 6.4 FREQUENCY = 1/(TOTAL TIME)=156Hz
 
 FOR PULSE AT 700
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
+TON = 4.2 TOFF=2.2 TOTAL TIME = 6.4 FREQUENCY = 1/(TOTAL TIME)=156Hz
 
 FOR PULSE AT 900
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
+TON = 5.2 TOFF=1.2 TOTAL TIME = 6.4 FREQUENCY = 1/(TOTAL TIME)=156Hz
 
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
